@@ -9,11 +9,9 @@ int main(int argc, char *argv[]) {
         exit(1);
     } else if(rc == 0) {
         // child process
-        printf("hello\n");
+        printf("I am child\n");
     } else {
         // parent process
-        wait(NULL);
-        printf("goodbye\n");
+        printf("I am parent\n");
     }
-    return 0;
 }
